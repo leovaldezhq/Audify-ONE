@@ -31,7 +31,7 @@ public class Song extends Audio {
 
     @Override
     public double getRating(){
-        if (this.getTotalPlays() > 5000 && this.getTotalLikes() >= 3800) {
+        if (this.getTotalPlays() > 1000 && this.getTotalLikes() >= 400) {
             return 10;
         } else {
             return 5;

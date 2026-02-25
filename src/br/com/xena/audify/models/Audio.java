@@ -7,12 +7,11 @@ public class Audio {
     private double totalLikes;
     private double rating;
 
-    public void displayTechnicalSpecs() {
+    public void displayMetadata() {
         System.out.println("Title: " + title);
         System.out.println("Duration: " + duration);
         System.out.println("Total Plays: " + totalPlays);
         System.out.println("Likes: " + totalLikes);
-        System.out.println("Rating: " + rating);
     }
 
     public String getTitle() {
@@ -53,5 +52,13 @@ public class Audio {
 
     public void setRating(double rating) {
         this.rating = rating;
+    }
+
+    public void likes() {
+        totalLikes++;
+    }
+
+    public void plays() {
+        totalPlays++;
     }
 }

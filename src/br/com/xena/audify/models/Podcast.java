@@ -22,7 +22,7 @@ public class Podcast extends Audio {
 
     @Override
     public double getRating(){
-        if (this.getTotalPlays() > 3000 && this.getTotalLikes() >= 2000) {
+        if (this.getTotalPlays() > 1000 && this.getTotalLikes() >= 400) {
             return 10;
         } else {
             return 5;
